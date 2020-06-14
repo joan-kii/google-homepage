@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+        .navbar{
+          display: flex;
+          flex: 1;
+          justify-content: space-between;
+        }
+        .link {
+          display: inline-block;
+          font-size: 13px;
+          padding-left: 13px;
+          padding-right: 3px;
+          text-decoration: none;
+          color: #000;
+          opacity: 0.75;
+          font-family: arial, sans-serif;
+        }
+        .link:hover {
+          text-decoration: underline; 
+        }
+        .logo {
+          display: flex;
+          flex: 2;
+          justify-content: center;
+          margin: 109px 0px 10px 0px;
+        }
+        #logo_goo {
+          max-width: 250px;
+          height: auto;
+        }
+        #caja {
+          height: 30px;
+          width: 500px;
+          border-radius: 30px;
+          padding-inline-start: 20px;
+          margin: 0px 20px 20px 20px;
+          border: 1px solid #dfe1e5;
+        }
+        #caja:hover {
+          box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+        }
+        .buscar {
+          display: flex;
+          flex: 3;
+          flex-direction: row;
+          justify-content: center;
+        }
+        .botones {
+          display: flex;
+          flex: 4;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+        #boton1 {
+          margin: 11px 4px 11px 4px;
+          padding: 5px 16px;
+          border-radius: 4px;
+          background-color: #f1f1f1;
+          font-size: 14px;
+          line-height: 27px;
+          border: 1px solid #fff;
+          color: #5F6368;
+          font-family: arial,sans-serif
+        }
+        #boton2 {
+          order: 1;
+          margin: 11px 4px 11px 4px;
+          padding: 5px 16px;
+          border-radius: 4px;
+          background-color: #f1f1f1;
+          font-size: 14px;
+          line-height: 27px;
+          border: 1px solid #fff;
+          color: #5F6368;
+          font-family: arial,sans-serif
+        }
+        #boton1:hover {
+          background-color: #f8f8f8;
+          box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+          color: #222;
+          border: 1px solid #c6c6c6;
+          cursor: pointer;
+        }
+        #boton2:hover {
+          background-color: #f8f8f8;
+          box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+          color: #222;
+          border: 1px solid #c6c6c6;
+          cursor: pointer;
+        }
+        #boton_sesion {
+          margin: 11px 4px 11px 4px;
+          padding: 5px 16px;
+          border-radius: 4px;
+          background-color: #4285f4;
+          font-size: 12px;
+          line-height: 27px;
+          border: 1px solid #fff;
+          color: #FFF;
+          font-family: arial, sans-serif;
+          text-decoration: none;
+          font-weight: bold;
+          cursor: default;
+          line-height: 28px;
+          border-radius: 3px;
+          padding: 7px 16px 7px 16px;
+        }
+        .lenguas {
+          display: flex;
+          flex: 5;
+          line-height: 14px;
+          font-size: 13px;
+          justify-content: center;
+          color: #000;
+          font-family: arial, sans-serif;
+        }
+        .link_lenguas {
+          text-decoration: none;
+          padding-right: 10px;
+          padding-left: 3px;
+        }
+        .link_lenguas:hover {
+          text-decoration: underline;
+        }
+        .footer1 {
+          display: flex;
+          flex: 6;
+          flex-direction: row;
+          position: fixed;
+          left: 0;
+          bottom: 48px;
+          width: 100%;
+          background: #f2f2f2;
+          border-top: 1px solid #e4e4e4;
+          line-height: 20px;
+          font-size: 13px;
+          padding-left: 15px;
+          color: #000;
+          opacity: 0.75;
+          font-family: arial, sans-serif;
+        }
+        .footer2 {
+          display: flex;
+          flex: 7;
+          flex-direction: row;
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background: #f2f2f2;
+          border-top: 1px solid #e4e4e4;
+          line-height: 50px;
+        }
+      </style>
+    </head>
+    <title>
+        La versión "keep it cutre" de Google
+    </title>
+    <body>
+      <div class="navbar">
+        <div>
+          <a class="link" href="https://about.google/?fg=1&utm_source=google-ES&utm_medium=referral&utm_campaign=hp-header">Sobre Google</a>
+          <a class="link" href="https://store.google.com/ES/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=es-ES">Tienda</a>
+        </div>
+        <div>
+          <a class="link" href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
+          <a class="link" href="https://www.google.es/imghp?hl=es&tab=wi&ogbl">Imágenes</a>
+          <a href="https://accounts.google.com/ServiceLogin?hl=es&amp;passive=true&amp;continue=https://www.google.com/" id="boton_sesion">Iniciar Sesión</a>
+        </div>
+      </div>
+      <div class="logo">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" id="logo_goo" alt="logo de google">
+      </div>
+      <div>
+        <form>
+          <div class="buscar">
+            <input id="caja" type="text">
+          </div>
+          <div class="botones">
+            <input id="boton1" type="submit" value="Buscar con Google">
+            <input id="boton2" type="submit" value="Voy a tener suerte">
+          </div>
+        </form>
+      </div>
+      <div class="lenguas">
+        <p>
+          Ofrecido por Google en:  <a href="#" class="link_lenguas">català</a><a href="#" class="link_lenguas">galego</a><a href="#" class="link_lenguas">euskara</a>
+        </p>
+      </div>
+      <footer>
+        <div class="footer1">
+          <p>
+            España
+          </p>
+        </div>
+        <div class="footer2">
+          <div class="navbar">
+            <div>
+              <a href="https://www.google.com/intl/es_es/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" class="link">Publicidad</a>
+              <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1" class="link">Empresa</a>
+              <a href="//google.com/search/howsearchworks/?fg=1" class="link">Cómo funciona la Búsqueda</a>
+            </div>
+            <div>
+              <a href="https://policies.google.com/privacy?fg=1" class="link">Privacidad</a>
+              <a href="https://policies.google.com/terms?fg=1" class="link">Términos</a>
+              <a href="https://www.google.com/preferences?hl=es" class="link">Configuración</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
+</html>
