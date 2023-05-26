@@ -1,6 +1,6 @@
-Google Fake Home
+## Overview
+This is an exercise for The Odin Project's JavaScript path, a recreation of the google search hompage.
 
-En este ejercicio hemos recreado la home de Google con la única finalidad
-de aprender un poco de CSS y de HTML.
-
-Hemos creado clases, ids y flexboxes.
+## Built with
+  - HTML
+  - CSS
